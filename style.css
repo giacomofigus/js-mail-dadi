@@ -10,6 +10,7 @@ body{
     font-family: sans-serif;
 }
 
+
 h1{
     text-align: center;
     margin-top: 20px;
@@ -43,6 +44,31 @@ h1{
     background-color: transparent;
     border: 1px solid white;
     border-radius: 10px ;
+    color: white;
+
+}
+
+
+
+h1:last-child{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#section-mail{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#section-mail input, button{
+    height: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius:  5px;
+    margin-inline: 10px;
     color: white;
 
 }

@@ -1,7 +1,4 @@
 /*
-**Gioco dei dadi**
-Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
-Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
 **Mail**
 Chiedi all’utente la sua email,
@@ -16,6 +13,8 @@ stampa un messaggio appropriato sull’esito del controllo.
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
 */ 
+
+// DADI 
 let x;
 let y;
 
@@ -35,6 +34,48 @@ document.getElementById("generateBtn").onclick = function(){
         document.getElementById("win-draw").innerHTML = "Pareggio!"
     }
 }
+
+// MAIL
+const mails = ["franco", "pippo", "mario", "dario"]
+
+let variabileControllore = false
+
+document.getElementById("sendMail").onclick = function(){
+    const mailUserHtml = document.getElementById("mailUser").value
+
+    for (i = 0; i <= mails.length; i++ ){
+
+        if(  mailUserHtml === mails[i] ){
+            variabileControllore === true
+            console.log(variabileControllore);
+        } else {
+            variabileControllore === false
+        }
+        
+        
+    }
+
+    if( variabileControllore == true ){
+        console.log("giusto");
+    } else{
+        console.log("sbagliato");
+    }
+
+    
+    
+   
+}
+
+
+// for(i = 0; i <= mails.length; i++){
+//     console.log(mails);
+
+    
+// }
+
+
+
+ 
 
 
 
