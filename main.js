@@ -38,21 +38,17 @@ document.getElementById("generateBtn").onclick = function(){
 // MAIL
 const mails = ["franco", "pippo", "mario", "dario"]
 
-let variabileControllore = false
+let variabileControllore = false 
 
 document.getElementById("sendMail").onclick = function(){
     const mailUserHtml = document.getElementById("mailUser").value
 
-    for (i = 0; i <= mails.length; i++ ){
+    for (i = 0; i < mails.length; i++ ){
 
-        if(  mailUserHtml === mails[i] ){
-            variabileControllore === true
-            console.log(variabileControllore);
-        } else {
-            variabileControllore === false
-        }
-        
-        
+        if( mails[i] === mailUserHtml ){
+            variabileControllore = true;
+            break;
+        } 
     }
 
     if( variabileControllore == true ){
@@ -61,17 +57,8 @@ document.getElementById("sendMail").onclick = function(){
         console.log("sbagliato");
     }
 
-    
-    
-   
 }
 
-
-// for(i = 0; i <= mails.length; i++){
-//     console.log(mails);
-
-    
-// }
 
 
 
