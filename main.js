@@ -16,3 +16,22 @@ stampa un messaggio appropriato sull’esito del controllo.
 5. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
 
 */ 
+
+// function randomComp(max) {
+//     return Math.floor(Math.random() * max);  
+// }
+
+
+// console.log(randomComp(7));
+// console.log(randomUser(7));
+const buttonHtml = document.getElementById('generateBtn')
+const dado2Html = document.getElementById('dado-2')
+const dado1Html = document.getElementById('dado-1')
+
+buttonHtml.addEventListener(function randomUser() {
+    return Math.floor(Math.random() * 10) + 1;
+    dado1Html.innerHTML = (randomUser(7));
+     
+})
+
+
