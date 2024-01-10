@@ -27,6 +27,14 @@ document.getElementById("generateBtn").onclick = function(){
     document.getElementById("dado-1").innerHTML = x;
     document.getElementById("dado-2").innerHTML = y;
 
+    if(x > y){
+        document.getElementById("win-draw").innerHTML = "Ha vinto user 1!"
+    } else if (x < y){
+        document.getElementById("win-draw").innerHTML = "Ha vinto user 2!"
+    } else{
+        document.getElementById("win-draw").innerHTML = "Pareggio!"
+    }
 }
+
 
 
